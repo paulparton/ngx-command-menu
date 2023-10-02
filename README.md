@@ -7,7 +7,7 @@
 
 ## Start the app
 
-To start the development server run `nx serve ngx-command-menu`. Open your browser and navigate to http://localhost:4200/. Happy coding!
+To start the development server run `nx serve ngx-command-menu-demo`. Open your browser and navigate to http://localhost:4200/. Happy coding!
 
 
 ## Generate code

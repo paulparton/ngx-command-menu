@@ -1,25 +1,25 @@
 {
-  "name": "ngx-command-menu",
+  "name": "ngx-command-menu-demo",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "org",
-  "sourceRoot": "apps/ngx-command-menu/src",
+  "sourceRoot": "apps/ngx-command-menu-demo/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/ngx-command-menu",
-        "index": "apps/ngx-command-menu/src/index.html",
-        "main": "apps/ngx-command-menu/src/main.ts",
+        "outputPath": "dist/apps/ngx-command-menu-demo",
+        "index": "apps/ngx-command-menu-demo/src/index.html",
+        "main": "apps/ngx-command-menu-demo/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/ngx-command-menu/tsconfig.app.json",
+        "tsConfig": "apps/ngx-command-menu-demo/tsconfig.app.json",
         "assets": [
-          "apps/ngx-command-menu/src/favicon.ico",
-          "apps/ngx-command-menu/src/assets"
+          "apps/ngx-command-menu-demo/src/favicon.ico",
+          "apps/ngx-command-menu-demo/src/assets"
         ],
-        "styles": ["apps/ngx-command-menu/src/styles.scss"],
+        "styles": ["apps/ngx-command-menu-demo/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -53,10 +53,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "ngx-command-menu:build:production"
+          "browserTarget": "ngx-command-menu-demo:build:production"
         },
         "development": {
-          "browserTarget": "ngx-command-menu:build:development"
+          "browserTarget": "ngx-command-menu-demo:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -64,7 +64,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "ngx-command-menu:build"
+        "browserTarget": "ngx-command-menu-demo:build"
       }
     },
     "lint": {
@@ -72,8 +72,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "apps/ngx-command-menu/**/*.ts",
-          "apps/ngx-command-menu/**/*.html"
+          "apps/ngx-command-menu-demo/**/*.ts",
+          "apps/ngx-command-menu-demo/**/*.html"
         ]
       }
     },
@@ -81,7 +81,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/ngx-command-menu/jest.config.ts",
+        "jestConfig": "apps/ngx-command-menu-demo/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -94,7 +94,7 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "ngx-command-menu:build"
+        "buildTarget": "ngx-command-menu-demo:build"
       }
     }
   }

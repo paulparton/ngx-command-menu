@@ -423,7 +423,7 @@ import { CommonModule } from '@angular/common';
         <div id="welcome">
           <h1>
             <span> Hello there, </span>
-            Welcome ngx-command-menu 👋
+            Welcome ngx-command-menu-demo 👋
           </h1>
         </div>
         <!--  HERO  -->

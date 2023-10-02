@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('ngx-command-menu', () => {
+describe('ngx-command-menu-demo', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
@@ -8,6 +8,6 @@ describe('ngx-command-menu', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome ngx-command-menu');
+    getGreeting().contains('Welcome ngx-command-menu-demo');
   });
 });
