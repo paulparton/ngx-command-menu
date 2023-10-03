@@ -46,6 +46,7 @@ $dark-border: 1px solid #343a40;
       border-bottom: 1px solid var(--main-border);
 
       input {
+        color: var(--text-secondary);
         &:focus {
           outline-color: var(--delft-blue);
           // outline: none !important;
@@ -90,7 +91,7 @@ $dark-border: 1px solid #343a40;
             font-weight: 600;
 
             &:hover {
-              background-color: var(--highlight-primary);
+              background-color: var(--highlight-light);
               border-left: 4px solid var(--info);
               cursor: pointer;
             }
@@ -115,7 +116,7 @@ $dark-border: 1px solid #343a40;
       justify-content: space-between;
       align-items: center;
       padding: 0 9px;
-      color: var(--text);
+      color: var(--text-secondary);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       border-top: 1px solid var(--main-border);

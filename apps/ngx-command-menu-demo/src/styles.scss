@@ -91,6 +91,17 @@ $dark-highlight-danger: #b24545;
 $dark-highlight-light: #a2aab6;
 $dark-highlight-dark: #272a2e;
 
+
+// Dark Mode Text Colors
+$dark-text-primary: #ffffff;
+$dark-text-secondary: #d9d9d9;
+$dark-text-success: #8ae6a1;
+$dark-text-info: #82e0f5;
+$dark-text-warning: #ffe15a;
+$dark-text-danger: #ff7777;
+$dark-text-light: #adb5bd; // Adjusted to match standard Bootstrap dark text color
+$dark-text-dark: #000000;
+
 // Export the variables for both modes
 :root {
   // Light Mode (Bootstrap Standard)
@@ -147,6 +158,16 @@ body.dark-mode {
   --bg-light: #{$dark-bg-light};
   --bg-dark: #{$dark-bg-dark};
   --text-primary: #{$dark-text-primary};
+  --text-secondary: #{$dark-text-secondary};
+
+  --text-dark: #{$dark-text-dark};
+  --text-light: #{$dark-text-light};
+  --text-success: #{$dark-text-success};
+  --text-info: #{$dark-text-info};
+  --text-warning: #{$dark-text-warning};
+  --text-danger: #{$dark-text-danger};
+
+
   --highlight-primary: #{$dark-highlight-primary};
   --highlight-secondary: #{$dark-highlight-secondary};
   --highlight-success: #{$dark-highlight-success};
