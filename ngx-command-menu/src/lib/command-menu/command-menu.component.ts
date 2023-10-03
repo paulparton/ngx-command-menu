@@ -5,6 +5,7 @@ import {
   HostListener,
   Input,
   Output,
+  ViewChild,
 } from '@angular/core';
 
 export interface CmdMenuItem {
@@ -21,6 +22,14 @@ export type MenuState = 'opened' | 'closed';
   styleUrls: ['./command-menu.component.scss'],
 })
 export class CommandMenuComponent {
+  @ViewChild('search', { static: false })
+  set input(element: ElementRef<HTMLInputElement>) {
+    console.log(`input element`, element);
+    if (element) {
+      element.nativeElement.focus();
+    }
+  }
+
   @HostListener('document:click', ['$event'])
   onClick(event: MouseEvent) {
     if (!this.elementRef.nativeElement.contains(event.target)) {
@@ -39,9 +48,7 @@ export class CommandMenuComponent {
     if (event.metaKey && event.key === 'k') {
       this.open();
     }
-
   }
-
 
   /**
    * Keyboard combinations that trigger the menu to open.
@@ -50,6 +57,10 @@ export class CommandMenuComponent {
 
   /**
    * Items currently displayed in the menu
+   *
+   * Menu item should optionally be able to include predefined commands, e.g
+   * there could be commands that change how the menu is displayed "Show menu as list" / "Show menu as grid"
+   *
    */
   @Input() public readonly menuItems: CmdMenuItem[] = [];
 
