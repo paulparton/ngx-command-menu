@@ -14,6 +14,19 @@ export interface CmdMenuItem {
   label: string;
 }
 
+export interface CmdMenuLink extends CmdMenuItem {
+  type: 'link';
+  url: string;
+}
+
+export interface CmdMenuAction<T = unknown> extends CmdMenuItem {
+  type: 'action';
+  action: () => void;
+  meta?: T;
+}
+
+export type AnyCmdMenuItem = CmdMenuLink | CmdMenuAction;
+
 export type MenuState = 'opened' | 'closed';
 
 @Component({
@@ -53,7 +66,7 @@ export class CommandMenuComponent {
   /**
    * Keyboard combinations that trigger the menu to open.
    */
-  @Input() public readonly hotkeys: string[][] = [];
+  @Input() public hotkeys: string[][] = [];
 
   /**
    * Items currently displayed in the menu
@@ -62,17 +75,17 @@ export class CommandMenuComponent {
    * there could be commands that change how the menu is displayed "Show menu as list" / "Show menu as grid"
    *
    */
-  @Input() public readonly menuItems: CmdMenuItem[] = [];
+  @Input() public menuItems: CmdMenuItem[] = [];
 
   /**
    * Show a loading spinner
    */
-  @Input() public readonly loading = false;
+  @Input() public loading = false;
 
   /**
    * Debounce for emitting search requests
    */
-  @Input() public readonly searchDebounce = 500;
+  @Input() public searchDebounce = 500;
 
   /**
    * Emit search requests, this should result in the parent

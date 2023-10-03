@@ -31,6 +31,13 @@
       border-bottom: 1px solid var(--main-border);
 
       input {
+        &:focus {
+          outline-color: var(--delft-blue);
+          // outline: none !important;
+          // border:1px solid red;
+          // box-shadow: 0 0 10px #719ECE;
+        }
+
         box-sizing: border-box;
         width: 100%;
         padding: 12px 8px;
@@ -50,13 +57,27 @@
         padding: 0;
 
         li {
-          color: var(--text);
-          padding: 8px;
-          border-left: 4px solid transparent;
-          &:hover {
-            background-color: #FFF;
-            border-left: 4px solid var(--highlight);
-            cursor: pointer;
+
+          a {
+            display: block;
+            &:hover {
+              background-color: #FFF;
+              border-left: 4px solid var(--highlight);
+              cursor: pointer;
+            }
+
+            padding: 8px;
+            border-left: 4px solid transparent;
+            color: var(--delft-blue);
+            text-decoration: none;
+            font-weight: 600;
+
+            &:hover,
+            &:active,
+            &:visited {
+              color: var(--delft-blue);
+              text-decoration: none;
+            }
           }
 
         }

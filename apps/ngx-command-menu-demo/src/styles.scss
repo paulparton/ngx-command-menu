@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 html {
 
-
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 
 
@@ -18,7 +18,7 @@ html {
   --delft-blue: hsla(228, 26%, 30%, 1);
   --white-smoke: hsla(20, 14%, 96%, 1);
   --poppy: hsla(2, 70%, 53%, 1);
-  --viridian: hsla(151, 29%, 40%, 1);
+  --viridian: rgb(72, 132, 103);
 
   /* SCSS HEX */
   $rich-black: #0e131fff;
@@ -114,4 +114,21 @@ html {
     --footer-background: var(--african-violet);
     --text: $timberwolf;
   }
+}
+
+
+
+
+.spotlight-area {
+  width: 50vw;
+  height: 600px;
+  margin: auto;
+  margin-top: 160px;
+}
+
+.content-area {
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  padding: 30px;
+  text-align: center;
 }

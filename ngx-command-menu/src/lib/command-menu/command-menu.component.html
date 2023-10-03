@@ -5,10 +5,22 @@
     </div>
     <div class="cms-menu-items">
       <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
+        <li *ngFor="let item of menuItems">
+          <ng-container [ngSwitch]="item.type">
+            <ng-container *ngSwitchCase="'link'">
+              <a href="{{ $any(item).url }}" (click)="close()">{{ item.label}}</a>
+            </ng-container>
+            <ng-container *ngSwitchCase="'action'">
+              <a (click)="$any(item).action(); close()">{{ item.label }}</a>
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+              <!-- Not supported -->
+            </ng-container>
+
+
+          </ng-container>
+
+        </li>
       </ol>
     </div>
     <div class="cms-menu-footer">

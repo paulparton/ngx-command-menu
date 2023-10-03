@@ -1,3 +1,3 @@
-<cmd-command-menu #cmdMenu></cmd-command-menu>
+<cmd-command-menu #cmdMenu [menuItems]="commandMenuItems"></cmd-command-menu>
 <button (click)="cmdMenu.open()">Menu!</button>
 <router-outlet></router-outlet>
