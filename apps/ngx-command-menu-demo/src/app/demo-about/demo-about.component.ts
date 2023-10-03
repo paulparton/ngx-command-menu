@@ -34,6 +34,13 @@ import { CommonModule } from '@angular/common';
         height: 130px;
         flex: 1;
       }
+      h1 {
+        display: block;
+        text-align: center;
+      }
+      .spotlight-area {
+        margin-top: 0;
+      }
     `,
   ],
 })

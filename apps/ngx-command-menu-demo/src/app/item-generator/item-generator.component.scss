@@ -1,0 +1,15 @@
+.generator-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; // Two columns, 2/3 and 1/3 of the available space
+  grid-gap: 0px; // Adjust the gap between columns as needed
+
+  .generator-form {
+    background-color: #f0f0f0; // Adjust background color as needed
+    padding: 20px; // Add padding to the left column
+  }
+
+  .generator-preview {
+    background-color: #ccc; // Adjust background color as needed
+    padding: 20px; // Add padding to the right column
+  }
+}

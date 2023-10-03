@@ -25,9 +25,15 @@ export class AppComponent {
     },
     {
       id: 'about',
-      label: 'about',
+      label: 'About',
       type: 'link',
       url: 'about',
+    },
+    {
+      id: 'generator',
+      label: 'Item Generator',
+      type: 'link',
+      url: 'generator',
     },
     {
       id: 'action',

@@ -1,3 +1,4 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import {
   Component,
   ElementRef,
@@ -33,6 +34,16 @@ export type MenuState = 'opened' | 'closed';
   selector: 'cmd-command-menu',
   templateUrl: './command-menu.component.html',
   styleUrls: ['./command-menu.component.scss'],
+  animations: [
+    trigger('onOff', [
+      transition(':enter', [style({
+        opacity: 0,
+        transform: 'translateY(-100%)'
+      }),
+      animate(400)
+    ])
+    ])
+ ]
 })
 export class CommandMenuComponent {
   @ViewChild('search', { static: false })
@@ -86,6 +97,8 @@ export class CommandMenuComponent {
    * Debounce for emitting search requests
    */
   @Input() public searchDebounce = 500;
+
+  @Input() public static = false;
 
   /**
    * Emit search requests, this should result in the parent

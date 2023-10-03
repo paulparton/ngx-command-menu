@@ -1,122 +1,169 @@
 /* You can add global styles to this file, and also import other style files */
 html {
+  height: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-
-
-
-  /* CSS HEX */
-  --rich-black: #0e131fff;
-  --delft-blue: #38405fff;
-  --white-smoke: #f6f4f3ff;
-  --poppy: #db3a34ff;
-  --viridian: #498467ff;
-
-  /* CSS HSL */
-  --rich-black: hsla(222, 38%, 9%, 1);
-  --delft-blue: hsla(228, 26%, 30%, 1);
-  --white-smoke: hsla(20, 14%, 96%, 1);
-  --poppy: hsla(2, 70%, 53%, 1);
-  --viridian: rgb(72, 132, 103);
-
-  /* SCSS HEX */
-  $rich-black: #0e131fff;
-  $delft-blue: #38405fff;
-  $white-smoke: #f6f4f3ff;
-  $poppy: #db3a34ff;
-  $viridian: #498467ff;
-
-  /* SCSS HSL */
-  $rich-black: hsla(222, 38%, 9%, 1);
-  $delft-blue: hsla(228, 26%, 30%, 1);
-  $white-smoke: hsla(20, 14%, 96%, 1);
-  $poppy: hsla(2, 70%, 53%, 1);
-  $viridian: hsla(151, 29%, 40%, 1);
-
-  /* SCSS RGB */
-  $rich-black: rgba(14, 19, 31, 1);
-  $delft-blue: rgba(56, 64, 95, 1);
-  $white-smoke: rgba(246, 244, 243, 1);
-  $poppy: rgba(219, 58, 52, 1);
-  $viridian: rgba(73, 132, 103, 1);
-
-  /* SCSS Gradient */
-  $gradient-top: linear-gradient(0deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
-  $gradient-right: linear-gradient(90deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
-  $gradient-bottom: linear-gradient(180deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
-  $gradient-left: linear-gradient(270deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
-  $gradient-top-right: linear-gradient(45deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
-  $gradient-bottom-right: linear-gradient(135deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
-  $gradient-top-left: linear-gradient(225deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
-  $gradient-bottom-left: linear-gradient(315deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
-  $gradient-radial: radial-gradient(#0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
-
-
-  --main-background: #{$white-smoke};
-  --main-border: #{$rich-black};
-  --content-background: #{$white-smoke};
-  --footer-background: #{$white-smoke};
-  --text: #{$delft-blue};
-  --highlight: #{$viridian};
-
-  .dark-mode {
-
-    --raisin-black: #201e1fff;
-    --timberwolf: #dad7cdff;
-    --sage: #a3b18aff;
-    --slate-gray: #5f758eff;
-    --african-violet: #9d79bcff;
-
-    /* CSS HSL */
-    --raisin-black: hsla(330, 3%, 12%, 1);
-    --timberwolf: hsla(46, 15%, 83%, 1);
-    --sage: hsla(82, 20%, 62%, 1);
-    --slate-gray: hsla(212, 20%, 46%, 1);
-    --african-violet: hsla(272, 33%, 61%, 1);
-
-    /* SCSS HEX */
-    $raisin-black: #201e1fff;
-    $timberwolf: #dad7cdff;
-    $sage: #a3b18aff;
-    $slate-gray: #5f758eff;
-    $african-violet: #9d79bcff;
-
-    /* SCSS HSL */
-    $raisin-black: hsla(330, 3%, 12%, 1);
-    $timberwolf: hsla(46, 15%, 83%, 1);
-    $sage: hsla(82, 20%, 62%, 1);
-    $slate-gray: hsla(212, 20%, 46%, 1);
-    $african-violet: hsla(272, 33%, 61%, 1);
-
-    /* SCSS RGB */
-    $raisin-black: rgba(32, 30, 31, 1);
-    $timberwolf: rgba(218, 215, 205, 1);
-    $sage: rgba(163, 177, 138, 1);
-    $slate-gray: rgba(95, 117, 142, 1);
-    $african-violet: rgba(157, 121, 188, 1);
-
-    /* SCSS Gradient */
-    $gradient-top: linear-gradient(0deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
-    $gradient-right: linear-gradient(90deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
-    $gradient-bottom: linear-gradient(180deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
-    $gradient-left: linear-gradient(270deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
-    $gradient-top-right: linear-gradient(45deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
-    $gradient-bottom-right: linear-gradient(135deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
-    $gradient-top-left: linear-gradient(225deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
-    $gradient-bottom-left: linear-gradient(315deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
-    $gradient-radial: radial-gradient(#201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
-
-
-    --main-background: var(--raisin-black);
-    --main-border: var(--raisin-black);
-    --content-background: var(--slate-gray);
-    --footer-background: var(--african-violet);
-    --text: $timberwolf;
+  body {
+    height: 100vh;
   }
+
+  .org-root {
+    height: 100vh;
+  }
+
+  .org-item-generator {
+    height: 100vh;
+  }
+
+  .generator-container {
+    height: 100vh;
+  }
+
+
 }
 
+// Colors
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
 
+$dark-primary: #0d6efd;
+$dark-secondary: #424242;
+$dark-success: #198754;
+$dark-info: #0dcaf0;
+$dark-warning: #ffc107;
+$dark-danger: #f86c6b;
+$dark-light: #e5e7eb;
+$dark-dark: #212529;
+
+// Background Colors
+$bg-primary: #f8f9fa;
+$bg-secondary: #e2e3e5;
+$bg-success: #d1e7dd;
+$bg-info: #d4ecf2;
+$bg-warning: #fff3cd;
+$bg-danger: #f8d7da;
+$bg-light: #ffffff; // Adjusted to match standard Bootstrap light mode
+$bg-dark: #1b1e22;
+
+$dark-bg-primary: #1c2236;
+$dark-bg-secondary: #333333;
+$dark-bg-success: #234d20;
+$dark-bg-info: #193c4e;
+$dark-bg-warning: #7c6016;
+$dark-bg-danger: #5f2020;
+$dark-bg-light: #555e68;
+$dark-bg-dark: #121416;
+
+// Text Colors
+$text-primary: #000000;
+$text-secondary: #333333;
+$text-success: #198754;
+$text-info: #0dcaf0;
+$text-warning: #ffc107;
+$text-danger: #f86c6b;
+$text-light: #212529; // Adjusted to match standard Bootstrap light text color
+$text-dark: #ffffff;
+
+$dark-text-primary: #ffffff;
+
+// Highlight Colors
+$highlight-primary: #cce5ff;
+$highlight-secondary: #e5e5e5;
+$highlight-success: #d2f4d2;
+$highlight-info: #cce8f7;
+$highlight-warning: #fff2b3;
+$highlight-danger: #f9c4c4;
+$highlight-light: #ffffff;
+$highlight-dark: #1d2125;
+
+$dark-highlight-primary: #4d84db;
+$dark-highlight-secondary: #6e6e6e;
+$dark-highlight-success: #47a44b;
+$dark-highlight-info: #3f99c5;
+$dark-highlight-warning: #c7a20f;
+$dark-highlight-danger: #b24545;
+$dark-highlight-light: #a2aab6;
+$dark-highlight-dark: #272a2e;
+
+// Export the variables for both modes
+:root {
+  // Light Mode (Bootstrap Standard)
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --success: #{$success};
+  --info: #{$info};
+  --warning: #{$warning};
+  --danger: #{$danger};
+  --light: #{$light};
+  --dark: #{$dark};
+  --bg-primary: #{$bg-primary};
+  --bg-secondary: #{$bg-secondary};
+  --bg-success: #{$bg-success};
+  --bg-info: #{$bg-info};
+  --bg-warning: #{$bg-warning};
+  --bg-danger: #{$bg-danger};
+  --bg-light: #{$bg-light}; // Adjusted to match standard Bootstrap light mode
+  --bg-dark: #{$bg-dark};
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+  --text-success: #{$text-success};
+  --text-info: #{$text-info};
+  --text-warning: #{$text-warning};
+  --text-danger: #{$text-danger};
+  --text-light: #{$text-light}; // Adjusted to match standard Bootstrap light text color
+  --text-dark: #{$text-dark};
+  --highlight-primary: #{$highlight-primary};
+  --highlight-secondary: #{$highlight-secondary};
+  --highlight-success: #{$highlight-success};
+  --highlight-info: #{$highlight-info};
+  --highlight-warning: #{$highlight-warning};
+  --highlight-danger: #{$highlight-danger};
+  --highlight-light: #{$highlight-light};
+  --highlight-dark: #{$highlight-dark};
+}
+
+body.dark-mode {
+  // Dark Mode
+  --primary: #{$dark-primary};
+  --secondary: #{$dark-secondary};
+  --success: #{$dark-success};
+  --info: #{$dark-info};
+  --warning: #{$dark-warning};
+  --danger: #{$dark-danger};
+  --light: #{$dark-light};
+  --dark: #{$dark-dark};
+  --bg-primary: #{$dark-bg-primary};
+  --bg-secondary: #{$dark-bg-secondary};
+  --bg-success: #{$dark-bg-success};
+  --bg-info: #{$dark-bg-info};
+  --bg-warning: #{$dark-bg-warning};
+  --bg-danger: #{$dark-bg-danger};
+  --bg-light: #{$dark-bg-light};
+  --bg-dark: #{$dark-bg-dark};
+  --text-primary: #{$dark-text-primary};
+  --highlight-primary: #{$dark-highlight-primary};
+  --highlight-secondary: #{$dark-highlight-secondary};
+  --highlight-success: #{$dark-highlight-success};
+  --highlight-info: #{$dark-highlight-info};
+  --highlight-warning: #{$dark-highlight-warning};
+  --highlight-danger: #{$dark-highlight-danger};
+  --highlight-light: #{$dark-highlight-light};
+  --highlight-dark: #{$dark-highlight-dark};
+}
+
+// Drop Shadows
+$shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+
+// Borders
+$border: 1px solid #e0e0e0;
+$dark-border: 1px solid #343a40;
 
 
 .spotlight-area {
@@ -132,3 +179,135 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   padding: 30px;
   text-align: center;
 }
+
+
+// Example Card Classes
+.my-card {
+  background-color: var(--primary);
+  color: var(--light);
+  box-shadow: $shadow;
+  border: $border;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+}
+
+.my-card.secondary {
+  background-color: var(--secondary);
+  // Other styles...
+}
+
+
+// Add more classes and styles as needed
+
+
+
+//   /* CSS HEX */
+//   --rich-black: #0e131fff;
+//   --delft-blue: #38405fff;
+//   --white-smoke: #f6f4f3ff;
+//   --poppy: #db3a34ff;
+//   --viridian: #498467ff;
+
+//   /* CSS HSL */
+//   --rich-black: hsla(222, 38%, 9%, 1);
+//   --delft-blue: hsla(228, 26%, 30%, 1);
+//   --white-smoke: hsla(20, 14%, 96%, 1);
+//   --poppy: hsla(2, 70%, 53%, 1);
+//   --viridian: rgb(72, 132, 103);
+
+//   /* SCSS HEX */
+//   $rich-black: #0e131fff;
+//   $delft-blue: #38405fff;
+//   $white-smoke: #f6f4f3ff;
+//   $poppy: #db3a34ff;
+//   $viridian: #498467ff;
+
+//   /* SCSS HSL */
+//   $rich-black: hsla(222, 38%, 9%, 1);
+//   $delft-blue: hsla(228, 26%, 30%, 1);
+//   $white-smoke: hsla(20, 14%, 96%, 1);
+//   $poppy: hsla(2, 70%, 53%, 1);
+//   $viridian: hsla(151, 29%, 40%, 1);
+
+//   /* SCSS RGB */
+//   $rich-black: rgba(14, 19, 31, 1);
+//   $delft-blue: rgba(56, 64, 95, 1);
+//   $white-smoke: rgba(246, 244, 243, 1);
+//   $poppy: rgba(219, 58, 52, 1);
+//   $viridian: rgba(73, 132, 103, 1);
+
+//   /* SCSS Gradient */
+//   $gradient-top: linear-gradient(0deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
+//   $gradient-right: linear-gradient(90deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
+//   $gradient-bottom: linear-gradient(180deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
+//   $gradient-left: linear-gradient(270deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
+//   $gradient-top-right: linear-gradient(45deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
+//   $gradient-bottom-right: linear-gradient(135deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
+//   $gradient-top-left: linear-gradient(225deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
+//   $gradient-bottom-left: linear-gradient(315deg, #0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
+//   $gradient-radial: radial-gradient(#0e131fff, #38405fff, #f6f4f3ff, #db3a34ff, #498467ff);
+
+
+//   --main-background: #{$white-smoke};
+//   --main-border: #{$rich-black};
+//   --content-background: #{$white-smoke};
+//   --footer-background: #{$white-smoke};
+//   --text: #{$delft-blue};
+//   --highlight: #{$viridian};
+
+//   .dark-mode {
+
+//     --raisin-black: #201e1fff;
+//     --timberwolf: #dad7cdff;
+//     --sage: #a3b18aff;
+//     --slate-gray: #5f758eff;
+//     --african-violet: #9d79bcff;
+
+//     /* CSS HSL */
+//     --raisin-black: hsla(330, 3%, 12%, 1);
+//     --timberwolf: hsla(46, 15%, 83%, 1);
+//     --sage: hsla(82, 20%, 62%, 1);
+//     --slate-gray: hsla(212, 20%, 46%, 1);
+//     --african-violet: hsla(272, 33%, 61%, 1);
+
+//     /* SCSS HEX */
+//     $raisin-black: #201e1fff;
+//     $timberwolf: #dad7cdff;
+//     $sage: #a3b18aff;
+//     $slate-gray: #5f758eff;
+//     $african-violet: #9d79bcff;
+
+//     /* SCSS HSL */
+//     $raisin-black: hsla(330, 3%, 12%, 1);
+//     $timberwolf: hsla(46, 15%, 83%, 1);
+//     $sage: hsla(82, 20%, 62%, 1);
+//     $slate-gray: hsla(212, 20%, 46%, 1);
+//     $african-violet: hsla(272, 33%, 61%, 1);
+
+//     /* SCSS RGB */
+//     $raisin-black: rgba(32, 30, 31, 1);
+//     $timberwolf: rgba(218, 215, 205, 1);
+//     $sage: rgba(163, 177, 138, 1);
+//     $slate-gray: rgba(95, 117, 142, 1);
+//     $african-violet: rgba(157, 121, 188, 1);
+
+//     /* SCSS Gradient */
+//     $gradient-top: linear-gradient(0deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
+//     $gradient-right: linear-gradient(90deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
+//     $gradient-bottom: linear-gradient(180deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
+//     $gradient-left: linear-gradient(270deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
+//     $gradient-top-right: linear-gradient(45deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
+//     $gradient-bottom-right: linear-gradient(135deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
+//     $gradient-top-left: linear-gradient(225deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
+//     $gradient-bottom-left: linear-gradient(315deg, #201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
+//     $gradient-radial: radial-gradient(#201e1fff, #dad7cdff, #a3b18aff, #5f758eff, #9d79bcff);
+
+
+//     --main-background: var(--raisin-black);
+//     --main-border: var(--raisin-black);
+//     --content-background: var(--slate-gray);
+//     --footer-background: var(--african-violet);
+//     --text: $timberwolf;
+//   }
+// }
