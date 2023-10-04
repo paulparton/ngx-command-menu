@@ -30,10 +30,10 @@ jobs:
         run: npm ci
 
       - name: Build library
-        run: npm run build:ngx-command-menu
+        run: npx nx ngx-command-menu:build
 
       - name: Navigate to library directory
-        run: cd ngx-command-menu
+        run: cd dist/ngx-command-menu
 
       - name: Publish to NPM
         run: npm publish --access public
