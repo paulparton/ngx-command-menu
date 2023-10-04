@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Build library
-        run: npx nx ngx-command-menu build
+        run: npx nx build ngx-command-menu
 
       - name: Navigate to library directory
         run: cd dist/ngx-command-menu
